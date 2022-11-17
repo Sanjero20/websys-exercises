@@ -1,5 +1,5 @@
-const dna1 = '';
-const dna2 = '';
+const dna1 = 'GAGCCTACTAACGGGAT';
+const dna2 = 'CATCGTAATGACGGCCT';
 
 function isValidDNA(str) {
   const validChars = [...'CATG'];
@@ -11,4 +11,23 @@ function isValidDNA(str) {
   return true;
 }
 
-console.log(isValidDNA('ACGT'));
+function calcHammingDistance(dna1, dna2) {
+  const d1 = isValidDNA(dna1);
+  const d2 = isValidDNA(dna2);
+
+  if (d1 == false || d2 == false) return;
+
+  let mismatch = 0;
+  for (let i = 0; i < dna1.length; i++) {
+    if (dna1[i] != dna2[i]) {
+      mismatch += 1;
+    }
+  }
+
+  return mismatch;
+}
+
+console.log(dna1);
+console.log(dna2);
+const result = calcHammingDistance(dna1, dna2);
+console.log(result);
