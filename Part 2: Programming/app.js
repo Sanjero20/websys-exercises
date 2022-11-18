@@ -1,6 +1,3 @@
-const dna1 = 'GAGCCTACTAACGGGAT';
-const dna2 = 'CATCGTAATGACGGCCT';
-
 function isValidDNA(str) {
   const validChars = [...'CATG'];
   for (let i = 0; i < str.length; i++) {
@@ -26,8 +23,3 @@ function calcHammingDistance(dna1, dna2) {
 
   return mismatch;
 }
-
-console.log(dna1);
-console.log(dna2);
-const result = calcHammingDistance(dna1, dna2);
-console.log(result);
