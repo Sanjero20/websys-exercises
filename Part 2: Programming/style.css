@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -31,6 +34,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 3px;
 }
 
 input {
@@ -38,10 +42,14 @@ input {
 }
 
 .btn {
-  width: 80px;
   color: inherit;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   background-color: grey;
   border: 1px solid black;
   border-radius: 20px;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
 }
