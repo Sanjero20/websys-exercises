@@ -1,5 +1,6 @@
 function isValidDNA(str) {
   const validChars = [...'CATG'];
+  if (str.length < 0) return false;
   for (let i = 0; i < str.length; i++) {
     if (!validChars.includes(str[i])) {
       return false;
@@ -67,18 +68,33 @@ input2.addEventListener('input', () => {
 });
 
 btn.addEventListener('click', () => {
-  if (isDNA1Valid == false || isDNA2Valid == false) return;
+  result.textContent = '';
+  if (err1.textContent != '' || err2.textContent != '') return;
 
   const dna1 = input1.value;
   const dna2 = input2.value;
 
+  if (dna1.length <= 0 || dna2.length <= 0) {
+    err3.classList.remove('hide');
+    err3.textContent = '* Fill all input boxes *';
+    result.classList.add('hide');
+    return;
+  } else {
+    err3.classList.add('hide');
+  }
+
   if (isSameLength(dna1, dna2) == false) {
-    err3.textContent = 'Not Same length';
+    err3.textContent = '* Not Same length *';
+    err3.classList.remove('hide');
+    result.classList.add('hide');
+    return;
   } else {
     err3.textContent = '';
   }
 
+  err3.classList.add('hide');
   const difference = calcHammingDistance(dna1, dna2);
+  result.classList.remove('hide');
   result.textContent = `Difference: ${difference}`;
 });
 
