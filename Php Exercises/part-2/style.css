@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 1em;
+}
+
+hr {
+  margin: 1em 0;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
