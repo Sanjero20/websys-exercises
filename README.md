@@ -1,7 +1,5 @@
 ## Websys Activities
 
-<hr>
-
 <h4>Part 1: Web Design </h4>
 
 ![](./output-pictures/output1.png)
@@ -10,6 +8,6 @@
 
 ![](./output-pictures/output2.png)
 
-<h4>Part 3: Web Development </h4>
+<h4>Part 3: Web Development (Jquery)</h4>
 
 ![](./output-pictures/output3.gif)
