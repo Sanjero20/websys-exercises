@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 1em;
+}
+
+hr {
+  margin: 1em 0;
+}
+
+.green,
+.blue {
+  text-align: center;
+  margin: 0.5em;
+  padding: 1em;
+}
+
+.pad {
+  text-align: center;
+  padding: 1em;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+table {
+  width: 100%;
+}
+
+.normal {
+  background-color: green;
+}
+
+.warning {
+  background-color: yellow;
+}
+
+.high {
+  background-color: red;
+}
